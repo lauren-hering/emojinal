@@ -15,6 +15,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func showMessage(sender: UIButton) {
+        
+        let alertController = UIAlertController(title: "this is an alert", message: "hello", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title : "ok", style : UIAlertAction.Style.default, handler: nil))
+   
+        present(alertController, animated: true, completion: nil)
+    }
+    
+ 
 }
 
