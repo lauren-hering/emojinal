@@ -14,11 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+let emojis = ["🏊🏻‍♀️": "swimming", "🚣🏻‍♀️": "rowing"]
+    
     @IBAction func showMessage(sender: UIButton) {
         
-        let alertController = UIAlertController(title: "this is an alert", message: "hello", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title : "ok", style : UIAlertAction.Style.default, handler: nil))
+         let selectedSport = sender.titleLabel?.text
+        
+        let alertController = UIAlertController(title: "SportFactz!!", message: "hello", preferredStyle: UIAlertController.Style.alert)
+       
+        alertController.addAction(UIAlertAction(title : "OK", style : UIAlertAction.Style.default, handler: nil))
    
         present(alertController, animated: true, completion: nil)
     }
