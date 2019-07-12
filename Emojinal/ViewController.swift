@@ -14,13 +14,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-let emojis = ["🏊🏻‍♀️": "swimming", "🚣🏻‍♀️": "rowing"]
+    let emojis = ["🏊🏻‍♀️": "swimming", "🚣🏻‍♀️": "rowing", "⛹🏻‍♀️": "basketball", "🏃🏻‍♀️": "running"]
+   
+var facts = [
+    "swimming" : "it is in water",
+    "rowing" : "it is on water",
+    "basketball" : "you use a ball and a basket",
+    "running" : "it is on concrete"
+    ]
     
     @IBAction func showMessage(sender: UIButton) {
         
-         let selectedSport = sender.titleLabel?.text
+        let selectedSport = sender.titleLabel?.text
+        let emojiFact = facts[emojis[selectedSport!]!]
         
-        let alertController = UIAlertController(title: "SportFactz!!", message: "hello", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: emojis[selectedSport!], message: emojiFact, preferredStyle: UIAlertController.Style.alert)
        
         alertController.addAction(UIAlertAction(title : "OK", style : UIAlertAction.Style.default, handler: nil))
    

@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjk-gh-z1q">
-                                <rect key="frame" x="100" y="252" width="175" height="132"/>
+                                <rect key="frame" x="100" y="232" width="175" height="132"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="🚣🏻‍♀️"/>
                                 <connections>
@@ -46,17 +46,39 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bse-Qx-dPK">
+                                <rect key="frame" x="100" y="357" width="175" height="134"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="102"/>
+                                <state key="normal" title="⛹🏻‍♀️"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vRW-GU-SNm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4w-fo-Yh8">
+                                <rect key="frame" x="100" y="511" width="175" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="🏃🏻‍♀️"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ra-Xt-jq3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bse-Qx-dPK" secondAttribute="trailing" constant="100" id="2rP-lx-PJX"/>
+                            <constraint firstItem="bse-Qx-dPK" firstAttribute="top" secondItem="W2O-4l-k6V" secondAttribute="bottom" constant="130" id="5bm-Qg-ZSJ"/>
+                            <constraint firstItem="u4w-fo-Yh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="9mv-Nv-cep"/>
                             <constraint firstItem="vx1-lA-G1x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Dz4-FA-YT3"/>
                             <constraint firstItem="W2O-4l-k6V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="GYv-oy-r5h"/>
+                            <constraint firstItem="u4w-fo-Yh8" firstAttribute="top" secondItem="bse-Qx-dPK" secondAttribute="bottom" constant="20" id="KHq-LP-VWM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2O-4l-k6V" secondAttribute="trailing" constant="100" id="LSw-11-ZBG"/>
+                            <constraint firstItem="bse-Qx-dPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Qqd-O8-og6"/>
                             <constraint firstItem="wjk-gh-z1q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Tnr-Vg-hxk"/>
                             <constraint firstItem="Ywi-V5-Izm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XHZ-Hp-Gdr"/>
                             <constraint firstItem="Ywi-V5-Izm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="aMW-rm-Xaa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u4w-fo-Yh8" secondAttribute="trailing" constant="100" id="hgK-Cg-bNW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vx1-lA-G1x" secondAttribute="trailing" constant="50" id="lcM-di-kEF"/>
-                            <constraint firstItem="wjk-gh-z1q" firstAttribute="top" secondItem="W2O-4l-k6V" secondAttribute="bottom" constant="25" id="mlC-NA-uom"/>
+                            <constraint firstItem="wjk-gh-z1q" firstAttribute="top" secondItem="W2O-4l-k6V" secondAttribute="bottom" constant="5" id="mlC-NA-uom"/>
                             <constraint firstItem="vx1-lA-G1x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="r2F-w5-tP8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wjk-gh-z1q" secondAttribute="trailing" constant="100" id="yMs-yD-2Z5"/>
                             <constraint firstItem="W2O-4l-k6V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="z8F-Ag-GUc"/>
